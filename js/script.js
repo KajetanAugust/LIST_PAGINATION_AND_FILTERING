@@ -131,8 +131,9 @@ searchButton.addEventListener('click', () => { //adding event listener for searc
             `;//setting innerHtml for div element
         document.querySelector('.page').appendChild(noResults);//appending no results div to the page
         document.querySelector('.no-results-alert').style = 'color:gray; text-align: center; font-size:2rem; padding-top:50px; ';//setting noResult message style
-    }
 
+    }
+    pageNumber=10;
     appendPageLinks(filteredStudents); //adding pagination
     showPage(filteredStudents, pageNumber); // displaying filtered students
 });
